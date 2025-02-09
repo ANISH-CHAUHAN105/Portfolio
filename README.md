@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 My Portfolio Website
 
-## Getting Started
+Welcome to my **Next.js Portfolio Website**! This is a modern and responsive personal portfolio built with the latest **Next.js App Router, Tailwind CSS, and MongoDB**. It showcases my projects, skills, and allows users to interact via authentication and payments.
 
-First, run the development server:
+## 🔗 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+[View the Live Website](https://your-portfolio-link.com)
+
+## 📸 Screenshots
+
+| Home Page | Projects Page |
+| --------- | ------------- |
+|           |               |
+
+## 🛠️ Features
+
+- 🌟 **Fully Responsive** – Works on all devices
+- ⚡ **Fast & Optimized** – Using Next.js App Router
+- 🎨 **Styled with Tailwind CSS**
+- 🔐 **User Authentication** – Integrated with Clerk.js
+- 💳 **Razorpay Payments** – Accept donations & payments
+- 📊 **Visitor Counter** – Stored in MongoDB
+- 📂 **Projects Showcase** – Display my best work
+- ✉️ **Contact Form** – Users can reach out easily
+
+## 🏗️ Tech Stack
+
+- **Frontend:** Next.js (App Router), Tailwind CSS
+- **Backend:** Next.js API Routes, MongoDB
+- **Authentication:** Clerk.js
+- **Payments:** Razorpay
+
+## 📂 Project Structure
+
+```
+📁 my-portfolio
+ ┣ 📂 app
+ ┃ ┣ 📂 components
+ ┃ ┣ 📂 pages
+ ┃ ┣ 📂 api
+ ┣ 📂 public
+ ┣ 📂 styles
+ ┣ 📄 tailwind.config.mjs
+ ┣ 📄 postcss.config.mjs
+ ┣ 📄 next.config.mjs
+ ┗ 📄 README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 1️⃣ Clone the Repository
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```sh
+git clone https://github.com/your-username/your-portfolio.git
+cd your-portfolio
+```
 
-## Learn More
+### 2️⃣ Install Dependencies
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3️⃣ Set Up Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Create a `.env.local` file and add the required environment variables:
 
-## Deploy on Vercel
+```sh
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
+CLERK_SECRET_KEY=your_clerk_secret
+MONGODB_URI=your_mongo_uri
+RAZORPAY_KEY_ID=your_razorpay_key
+RAZORPAY_KEY_SECRET=your_razorpay_secret
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 4️⃣ Run the Project
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```sh
+npm run dev
+```
+
+The project will be running at [**http://localhost:3000**](http://localhost:3000).
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+## 💡 Contributing
+
+Feel free to contribute by submitting issues or pull requests!
+
+## 📞 Contact
+
+- **Portfolio**: [your-portfolio-link.com](https://your-portfolio-link.com)
+- **GitHub**: [@your-username](https://github.com/your-username)
+- **Twitter**: [@your-handle](https://twitter.com/your-handle)
+
