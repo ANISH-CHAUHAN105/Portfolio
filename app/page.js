@@ -133,7 +133,7 @@ export default function Home() {
                 with smooth transitions, a dark mode toggle.
               </p>
               <a
-                href="http://localhost:3000/"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-block text-blue-400 hover:text-blue-500"
