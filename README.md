@@ -39,9 +39,9 @@ Welcome to my **Next.js Portfolio Website**! This is a modern and responsive per
  ┃ ┣ 📂 (projects)
  ┃ ┣ 📂 api
  ┃ ┣ 📂 dashboard
- ┣ 📂 public
- ┣ 📂 styles
  ┣ 📂 lib
+ ┣ 📂 models
+ ┣ 📂 public
  ┣ 📄 tailwind.config.mjs
  ┣ 📄 postcss.config.mjs
  ┣ 📄 next.config.mjs
