@@ -10,7 +10,7 @@ Welcome to my **Next.js Portfolio Website**! This is a modern and responsive per
 
 | Home Page | Projects Page |
 | --------- | ------------- |
-|           |               |
+| ![Home](public/project1.png) | ![Projects](public/project2.png) |
 
 ## 🛠️ Features
 
@@ -35,33 +35,42 @@ Welcome to my **Next.js Portfolio Website**! This is a modern and responsive per
 ```
 📁 my-portfolio
  ┣ 📂 app
- ┃ ┣ 📂 components
- ┃ ┣ 📂 pages
+ ┃ ┣ 📂 (components)
+ ┃ ┣ 📂 (projects)
  ┃ ┣ 📂 api
+ ┃ ┣ 📂 dashboard
  ┣ 📂 public
  ┣ 📂 styles
+ ┣ 📂 lib
  ┣ 📄 tailwind.config.mjs
  ┣ 📄 postcss.config.mjs
  ┣ 📄 next.config.mjs
+ ┣ 📄 package.json
  ┗ 📄 README.md
 ```
 
 ## 🚀 Getting Started
 
-### 1️⃣ Clone the Repository
+### 1️⃣ Prerequisites
+
+Ensure you have the following installed:
+- **Node.js (Latest LTS Version)**
+- **npm** or **yarn**
+
+### 2️⃣ Clone the Repository
 
 ```sh
-gh repo clone ANISH-CHAUHAN105/Portfolio
-cd your-portfolio
+git clone https://github.com/ANISH-CHAUHAN105/Portfolio.git
+cd Portfolio
 ```
 
-### 2️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 
 ```sh
 npm install
 ```
 
-### 3️⃣ Set Up Environment Variables
+### 4️⃣ Set Up Environment Variables
 
 Create a `.env.local` file and add the required environment variables:
 
@@ -73,24 +82,37 @@ RAZORPAY_KEY_ID=your_razorpay_key
 RAZORPAY_KEY_SECRET=your_razorpay_secret
 ```
 
-### 4️⃣ Run the Project
+### 5️⃣ Run the Project
 
 ```sh
 npm run dev
 ```
 
-The project will be running at [**https://portfolio-njn2ydvb4-anish-chauhan105s-projects.vercel.app/**](https://portfolio-njn2ydvb4-anish-chauhan105s-projects.vercel.app/).
+The project will be running at [**http://localhost:3000/**](http://localhost:3000/).
+
+## 🚀 Deployment Guide
+
+You can deploy this project easily on **Vercel**:
+1. Install the Vercel CLI: `npm install -g vercel`
+2. Run `vercel` in the project directory and follow the setup steps.
+3. Your project will be live!
+
+## 🛠️ How to Contribute
+
+1. **Fork** the repository.
+2. **Create** a new branch: `git checkout -b feature-branch`.
+3. **Commit** your changes: `git commit -m "Add feature"`.
+4. **Push** to the branch: `git push origin feature-branch`.
+5. **Create a Pull Request** on GitHub.
 
 ## 📜 License
 
 This project is licensed under the **MIT License**.
 
-## 💡 Contributing
-
-Feel free to contribute by submitting issues or pull requests!
-
 ## 📞 Contact
 
 - **Portfolio**: [https://portfolio-njn2ydvb4-anish-chauhan105s-projects.vercel.app/](https://portfolio-njn2ydvb4-anish-chauhan105s-projects.vercel.app/)
 - **GitHub**: [@ANISH-CHAUHAN105](https://github.com/ANISH-CHAUHAN105)
+- **LinkedIn**: [Your LinkedIn Profile](#) (Add your actual LinkedIn profile link)
+- **Email**: [your-email@example.com](mailto:your-email@example.com) (Replace with your actual email)
 
