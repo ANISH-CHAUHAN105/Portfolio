@@ -79,7 +79,7 @@ RAZORPAY_KEY_SECRET=your_razorpay_secret
 npm run dev
 ```
 
-The project will be running at [**http://localhost:3000**](https://portfolio-njn2ydvb4-anish-chauhan105s-projects.vercel.app/).
+The project will be running at [**https://portfolio-njn2ydvb4-anish-chauhan105s-projects.vercel.app/**](https://portfolio-njn2ydvb4-anish-chauhan105s-projects.vercel.app/).
 
 ## 📜 License
 
@@ -91,6 +91,6 @@ Feel free to contribute by submitting issues or pull requests!
 
 ## 📞 Contact
 
-- **Portfolio**: [your-portfolio-link.com](https://portfolio-njn2ydvb4-anish-chauhan105s-projects.vercel.app/)
-- **GitHub**: [@your-username](https://github.com/ANISH-CHAUHAN105)
+- **Portfolio**: [https://portfolio-njn2ydvb4-anish-chauhan105s-projects.vercel.app/](https://portfolio-njn2ydvb4-anish-chauhan105s-projects.vercel.app/)
+- **GitHub**: [@ANISH-CHAUHAN105](https://github.com/ANISH-CHAUHAN105)
 
