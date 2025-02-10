@@ -34,19 +34,20 @@ Welcome to my **Next.js Portfolio Website**! This is a modern and responsive per
 
 ```
 📁 my-portfolio
- ┣ 📂 app
- ┃ ┣ 📂 (components)
- ┃ ┣ 📂 (projects)
- ┃ ┣ 📂 api
- ┃ ┣ 📂 dashboard
- ┣ 📂 lib
- ┣ 📂 models
- ┣ 📂 public
- ┣ 📄 tailwind.config.mjs
- ┣ 📄 postcss.config.mjs
- ┣ 📄 next.config.mjs
- ┣ 📄 package.json
- ┗ 📄 README.md
+ ┣ 📂 app  
+ ┃ ┣ 📜 globals.css, layout.js, page.js  
+ ┃ ┣ 📂 api (contact, payment, razorpay, visitor)  
+ ┃ ┣ 📂 components  
+ ┃ ┣ 📂 pages (about, contact, dashboard, payment, shop, socials, etc.)  
+ ┃ ┣ 📂 auth (sign-in, sign-up)  
+ ┣ 📂 lib  
+ ┣ 📂 models  
+ ┣ 📂 public  
+ ┣ 📂 styles  
+ ┣ 📄 tailwind.config.mjs, postcss.config.mjs, next.config.mjs  
+ ┣ 📄 package.json  
+ ┗ 📄 README.md  
+
 ```
 
 ## 🚀 Getting Started
