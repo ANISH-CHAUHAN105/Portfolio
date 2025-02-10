@@ -10,7 +10,7 @@ Welcome to my **Next.js Portfolio Website**! This is a modern and responsive per
 
 | Home Page | Projects Page |
 | --------- | ------------- |
-| ![Home](public/project1.png) | ![Projects](public/project2.png) |
+| ![Home](public/project2.png) | ![Projects](public/project1.png) |
 
 ## 🛠️ Features
 
