@@ -4,7 +4,7 @@ Welcome to my **Next.js Portfolio Website**! This is a modern and responsive per
 
 ## 🔗 Live Demo
 
-[View the Live Website](https://your-portfolio-link.com)
+[View the Live Website](https://portfolio-njn2ydvb4-anish-chauhan105s-projects.vercel.app/)
 
 ## 📸 Screenshots
 
@@ -51,7 +51,7 @@ Welcome to my **Next.js Portfolio Website**! This is a modern and responsive per
 ### 1️⃣ Clone the Repository
 
 ```sh
-git clone https://github.com/your-username/your-portfolio.git
+gh repo clone ANISH-CHAUHAN105/Portfolio
 cd your-portfolio
 ```
 
@@ -79,7 +79,7 @@ RAZORPAY_KEY_SECRET=your_razorpay_secret
 npm run dev
 ```
 
-The project will be running at [**http://localhost:3000**](http://localhost:3000).
+The project will be running at [**http://localhost:3000**](https://portfolio-njn2ydvb4-anish-chauhan105s-projects.vercel.app/).
 
 ## 📜 License
 
@@ -91,7 +91,6 @@ Feel free to contribute by submitting issues or pull requests!
 
 ## 📞 Contact
 
-- **Portfolio**: [your-portfolio-link.com](https://your-portfolio-link.com)
-- **GitHub**: [@your-username](https://github.com/your-username)
-- **Twitter**: [@your-handle](https://twitter.com/your-handle)
+- **Portfolio**: [your-portfolio-link.com](https://portfolio-njn2ydvb4-anish-chauhan105s-projects.vercel.app/)
+- **GitHub**: [@your-username](https://github.com/ANISH-CHAUHAN105)
 
