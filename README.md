@@ -4,7 +4,7 @@ Welcome to my **Next.js Portfolio Website**! This is a modern and responsive per
 
 ## 🔗 Live Demo
 
-[View the Live Website](https://portfolio-jp2vpv2om-anish-chauhan105s-projects.vercel.app/)
+[View the Live Website](https://portfolio-9cdcnfwhs-anish-chauhan105s-projects.vercel.app/)
 
 ## 📸 Screenshots
 
@@ -89,7 +89,7 @@ RAZORPAY_KEY_SECRET=your_razorpay_secret
 npm run dev
 ```
 
-The project will be running at [**https://portfolio-1cmwk1d1t-anish-chauhan105s-projects.vercel.app/**](https://portfolio-jp2vpv2om-anish-chauhan105s-projects.vercel.app/).
+The project will be running at [**https://portfolio-9cdcnfwhs-anish-chauhan105s-projects.vercel.app/**](https://portfolio-9cdcnfwhs-anish-chauhan105s-projects.vercel.app/).
 
 ## 🚀 Deployment Guide
 
@@ -112,7 +112,7 @@ This project is licensed under the **MIT License**.
 
 ## 📞 Contact
 
-- **Portfolio**: [https://portfolio-jp2vpv2om-anish-chauhan105s-projects.vercel.app/](https://portfolio-jp2vpv2om-anish-chauhan105s-projects.vercel.app/)
+- **Portfolio**: [https://portfolio-9cdcnfwhs-anish-chauhan105s-projects.vercel.app/](https://portfolio-9cdcnfwhs-anish-chauhan105s-projects.vercel.app/)
 - **GitHub**: [@ANISH-CHAUHAN105](https://github.com/ANISH-CHAUHAN105)
 - **LinkedIn**: [anish-chauhan-438735296](https://www.linkedin.com/in/anish-chauhan-438735296/) 
 - **Email**: [canish005@gmail.com](mailto:canish005@gmail.com) 
