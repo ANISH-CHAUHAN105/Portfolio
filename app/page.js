@@ -4,7 +4,6 @@ import TypedText from "./components/TypedText";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, FaDocker, FaBootstrap, FaGit, FaDatabase } from "react-icons/fa";
 import { DiMongodb, DiMysql, DiJava } from "react-icons/di";
 import dynamic from "next/dynamic";
-import dynamic from "next/dynamic";
 import VisitorCounter from "./components/VisitorCounter"; 
 
 export default function Home() {
