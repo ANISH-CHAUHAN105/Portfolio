@@ -5,6 +5,7 @@ export default function VisitorCounter() {
   const [count, setCount] = useState(0);
   const [animatedCount, setAnimatedCount] = useState(0);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
   const counterRef = useRef(null);
 
@@ -13,10 +14,10 @@ export default function VisitorCounter() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.disconnect(); // Stop observing after it's visible
+          observer.disconnect(); 
         }
       },
-      { threshold: 0.5 } // Trigger when 50% of the element is visible
+      { threshold: 0.5 } 
     );
 
     if (counterRef.current) observer.observe(counterRef.current);
@@ -29,14 +30,15 @@ export default function VisitorCounter() {
 
     const fetchVisitorCount = async () => {
       try {
-        const response = await fetch("/api/visitor-counter", {
-          method: "POST",
-        });
+        const response = await fetch("/api/visitor-counter", { method: "POST" });
         if (!response.ok) throw new Error(`Error: ${response.status}`);
+        
         const data = await response.json();
         setCount(data.count);
-      } catch (error) {
-        console.error("Error fetching visitor count:", error);
+        setError(null); 
+      } catch (err) {
+        console.error("Error fetching visitor count:", err);
+        setError("Failed to load visitors");
       } finally {
         setLoading(false);
       }
@@ -50,18 +52,18 @@ export default function VisitorCounter() {
 
     let start = animatedCount;
     const end = count;
-    const duration = 2000; // 2 seconds total animation time
-    const increment = Math.ceil((end - start) / 50); // Smaller steps for a slower update
+    const duration = 1500; 
+    const step = Math.max(1, Math.ceil((end - start) / 30)); 
 
     const timer = setInterval(() => {
-      start += increment;
+      start += step;
       if (start >= end) {
         setAnimatedCount(end);
         clearInterval(timer);
       } else {
         setAnimatedCount(start);
       }
-    }, 40); // Updates every 40ms (adjust to control speed)
+    }, 50); 
 
     return () => clearInterval(timer);
   }, [count, isVisible]);
@@ -76,9 +78,13 @@ export default function VisitorCounter() {
         <h3 className="text-lg font-semibold">🌟 Visitors</h3>
         <p className="text-sm text-gray-200">Real-time engagement</p>
         <div className="bg-white/10 py-2 px-4 mt-2 rounded-lg shadow">
-          <span className="text-3xl font-bold">
-            {loading ? "..." : animatedCount}
-          </span>
+          {error ? (
+            <span className="text-red-400 text-sm">{error}</span>
+          ) : (
+            <span className="text-3xl font-bold">
+              {loading ? "..." : animatedCount}
+            </span>
+          )}
         </div>
       </div>
     </section>
