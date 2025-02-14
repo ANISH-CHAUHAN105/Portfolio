@@ -1,20 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import TypedText from "./components/TypedText";
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaReact,
-  FaNodeJs,
-  FaGithub,
-  FaDocker,
-  FaBootstrap,
-  FaGit,
-  FaDatabase,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, FaDocker, FaBootstrap, FaGit, FaDatabase } from "react-icons/fa";
 import { DiMongodb, DiMysql, DiJava } from "react-icons/di";
-import VisitorCounter from "./components/VisitorCounter";
+import dynamic from "next/dynamic";
+const VisitorCounter = dynamic(() => import("./components/VisitorCounter"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
@@ -47,13 +39,14 @@ export default function Home() {
           <div className="flex justify-center lg:justify-start space-x-4 mt-4">
             <a
               href="/resume.pdf"
-              download
+              download="resume.pdf"
               className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg transition-all duration-300 ease-in-out hover:bg-blue-600 hover:scale-105 shadow-lg hover:shadow-blue-500/50"
             >
               Download Resume
             </a>
             <a
               href="/contact"
+              role="button"
               className="px-6 py-3 bg-gray-700 text-white font-semibold rounded-lg transition-all duration-300 ease-in-out hover:bg-gray-600 hover:scale-105 shadow-lg hover:shadow-gray-500/50"
             >
               Contact Me
@@ -67,6 +60,8 @@ export default function Home() {
             alt="Anish Chauhan"
             width={300}
             height={300}
+            priority 
+            loading="eager"
             className="rounded-full shadow-2xl border-4 border-gray-700 ring-2 ring-blue-500 transition duration-300 hover:scale-105 hover:shadow-xl hover:ring-4 hover:ring-blue-400/80"
             layout="intrinsic"
           />
