@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Allow: /public/
+
+Disallow: /app/api/
+Disallow: /lib/
+Disallow: /models/
+
+Sitemap: https://portfolio-one-azure-47.vercel.app/sitemap.xml
