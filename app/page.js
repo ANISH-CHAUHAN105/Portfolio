@@ -4,9 +4,11 @@ import TypedText from "./components/TypedText";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, FaDocker, FaBootstrap, FaGit, FaDatabase } from "react-icons/fa";
 import { DiMongodb, DiMysql, DiJava } from "react-icons/di";
 import dynamic from "next/dynamic";
+import dynamic from "next/dynamic";
 const VisitorCounter = dynamic(() => import("./components/VisitorCounter"), {
   ssr: false,
 });
+
 
 export default function Home() {
   return (
