@@ -24,6 +24,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>Anish Chauhan | Portfolio</title>
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="
+            default-src 'self'; 
+            script-src 'self' 'unsafe-inline' https://vercel.com https://www.googletagmanager.com https://www.google-analytics.com;
+            style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+            font-src 'self' https://fonts.gstatic.com;
+            img-src 'self' data: https://vercel.com;
+            connect-src 'self' https://vercel.com https://www.google-analytics.com;
+            frame-src 'none';
+          "
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-[100vh] bg-gray-900 text-white transition-colors duration-300`}
       >
@@ -31,8 +46,8 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <Footer />
-          <Analytics /> {/* Vercel Analytics */}
-          <SpeedInsights /> {/* Vercel Speed Insights */}
+          <Analytics />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
