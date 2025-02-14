@@ -18,25 +18,43 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Anish Chauhan | Portfolio",
-  description: "Welcome to my portfolio website.",
+  description: "Welcome to my portfolio website showcasing projects built with Next.js, React, and Tailwind CSS.",
+  openGraph: {
+    title: "Anish Chauhan | Portfolio",
+    description: "A modern portfolio featuring web development projects.",
+    url: "https://portfolio-one-azure-47.vercel.app/",
+    siteName: "Anish Chauhan Portfolio",
+    images: [
+      {
+        url: "/anish.jpg", 
+        width: 800,
+        height: 600,
+        alt: "Anish Chauhan Portfolio",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Anish Chauhan | Portfolio",
+    description: "Showcasing projects built with Next.js, React, and Tailwind CSS.",
+    images: ["/anish.jpg"],
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Anish Chauhan | Portfolio</title>
         <meta
           httpEquiv="Content-Security-Policy"
-          content="
-            default-src 'self'; 
+          content="default-src 'self'; 
             script-src 'self' 'unsafe-inline' https://vercel.com https://www.googletagmanager.com https://www.google-analytics.com;
             style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
             font-src 'self' https://fonts.gstatic.com;
             img-src 'self' data: https://vercel.com;
             connect-src 'self' https://vercel.com https://www.google-analytics.com;
-            frame-src 'none';
-          "
+            frame-src 'none';"
         />
       </head>
       <body
