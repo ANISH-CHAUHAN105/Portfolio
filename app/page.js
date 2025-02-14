@@ -5,10 +5,7 @@ import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, FaDocker, FaBoot
 import { DiMongodb, DiMysql, DiJava } from "react-icons/di";
 import dynamic from "next/dynamic";
 import dynamic from "next/dynamic";
-const VisitorCounter = dynamic(() => import("./components/VisitorCounter"), {
-  ssr: false,
-});
-
+import VisitorCounter from "./components/VisitorCounter"; 
 
 export default function Home() {
   return (
