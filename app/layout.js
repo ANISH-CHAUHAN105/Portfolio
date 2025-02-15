@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-       <meta
+      <meta
   httpEquiv="Content-Security-Policy"
   content="
     default-src 'self'; 
@@ -65,11 +65,13 @@ export default function RootLayout({ children }) {
       https://vercel.com 
       https://www.google-analytics.com 
       https://api.clerk.dev 
-      https://checkout.razorpay.com;
-    frame-src 'self' https://checkout.razorpay.com;
+      https://noted-frog-19.clerk.accounts.dev
+      https://lumberjack.razorpay.com
+      https://checkout.razorpay.com
+      https://api.razorpay.com;
+    frame-src 'self' https://checkout.razorpay.com https://api.razorpay.com;
   "
 />
-
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-[100vh] bg-gray-900 text-white transition-colors duration-300`}
