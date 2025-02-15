@@ -46,16 +46,30 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="default-src 'self'; 
-            script-src 'self' 'unsafe-inline' https://vercel.com https://www.googletagmanager.com https://www.google-analytics.com;
-            style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-            font-src 'self' https://fonts.gstatic.com;
-            img-src 'self' data: https://vercel.com;
-            connect-src 'self' https://vercel.com https://www.google-analytics.com;
-            frame-src 'none';"
-        />
+       <meta
+  httpEquiv="Content-Security-Policy"
+  content="
+    default-src 'self'; 
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' 
+      https://vercel.com 
+      https://www.googletagmanager.com 
+      https://www.google-analytics.com
+      https://checkout.razorpay.com
+      https://clerk.dev
+      https://*.clerk.dev
+      https://noted-frog-19.clerk.accounts.dev;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' data: https://vercel.com;
+    connect-src 'self' 
+      https://vercel.com 
+      https://www.google-analytics.com 
+      https://api.clerk.dev 
+      https://checkout.razorpay.com;
+    frame-src 'self' https://checkout.razorpay.com;
+  "
+/>
+
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-[100vh] bg-gray-900 text-white transition-colors duration-300`}
