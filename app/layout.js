@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta
+       <meta
   httpEquiv="Content-Security-Policy"
   content="
     default-src 'self'; 
@@ -79,8 +79,14 @@ export default function RootLayout({ children }) {
       https://checkout.razorpay.com
       https://api.razorpay.com
       https://captcha.clerk.com
-      wss://*.clerk.dev;
-    frame-src 'self' https://checkout.razorpay.com https://api.razorpay.com https://*.clerk.dev;
+      wss://*.clerk.dev
+      wss://*;
+    frame-src 'self' 
+      https://checkout.razorpay.com 
+      https://api.razorpay.com 
+      https://*.clerk.dev
+      https://captcha.clerk.com
+      https://vercel.live;
     worker-src 'self' blob:;
     child-src 'self' blob:;
   "
