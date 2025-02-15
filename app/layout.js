@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <meta
+       <meta
   httpEquiv="Content-Security-Policy"
   content="
     default-src 'self'; 
@@ -70,8 +70,11 @@ export default function RootLayout({ children }) {
       https://checkout.razorpay.com
       https://api.razorpay.com;
     frame-src 'self' https://checkout.razorpay.com https://api.razorpay.com;
+    worker-src 'self' blob:;
+    child-src 'self' blob:;
   "
 />
+
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-[100vh] bg-gray-900 text-white transition-colors duration-300`}
