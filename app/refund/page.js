@@ -1,11 +1,21 @@
 import React from "react";
+import Head from "next/head";
 import Link from "next/link";
 
 const Refund = () => {
     return (
         <div className="min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white">
+            <Head>
+                <title>Refund Policy | Your Website</title>
+                <meta
+                    name="description"
+                    content="Learn about our refund policy, including eligibility, non-refundable items, and refund processing details."
+                />
+                <meta name="robots" content="index, follow" />
+            </Head>
+
             <section className="max-w-5xl mx-auto p-6 md:p-12">
-                <h1 className="text-4xl font-bold text-center text-blue-500 dark:text-blue-400 mb-6">
+                <h1 className="text-4xl font-bold text-center text-blue-500 dark:text-blue-400 underline mb-6">
                     Refund Policy
                 </h1>
 
@@ -19,16 +29,10 @@ const Refund = () => {
                     <h2 className="text-2xl font-semibold text-blue-500 dark:text-blue-400 mb-4">
                         1. Eligibility for a Refund
                     </h2>
-                    <ul className="list-disc list-inside text-gray-900 space-y-2 dark:text-gray-300">
-                        <li>
-                            Refunds are available within <strong>7 days</strong> of purchase.
-                        </li>
-                        <li>
-                            The item must be unused, undamaged, and in its original condition.
-                        </li>
-                        <li>
-                            Certain digital products and services are <strong>non-refundable</strong> unless otherwise stated.
-                        </li>
+                    <ul className="list-disc list-outside pl-5 space-y-3 text-gray-900 dark:text-gray-300">
+                        <li>Refunds are available within <strong>7 days</strong> of purchase.</li>
+                        <li>The item must be unused, undamaged, and in its original condition.</li>
+                        <li>Certain digital products and services are <strong>non-refundable</strong> unless otherwise stated.</li>
                     </ul>
                 </div>
 
@@ -37,7 +41,7 @@ const Refund = () => {
                     <h2 className="text-2xl font-semibold text-blue-500 dark:text-blue-400 mb-4">
                         2. Non-Refundable Items
                     </h2>
-                    <ul className="list-disc list-inside text-gray-900 space-y-2 dark:text-gray-300">
+                    <ul className="list-disc list-outside pl-5 space-y-3 text-gray-900 dark:text-gray-300">
                         <li>Digital downloads or software products.</li>
                         <li>Customized or personalized items.</li>
                         <li>Subscription-based services once the billing cycle has started.</li>
@@ -53,7 +57,7 @@ const Refund = () => {
                     <p className="text-gray-900 leading-relaxed mb-4 dark:text-gray-300">
                         To initiate a refund request, please follow these steps:
                     </p>
-                    <ul className="list-decimal list-inside text-gray-900 space-y-2 dark:text-gray-300">
+                    <ul className="list-decimal list-outside pl-5 space-y-3 text-gray-900 dark:text-gray-300">
                         <li>Contact us at{" "}
                             <span className="text-blue-500 hover:underline cursor-pointer dark:text-blue-400">
                                 canish005@gmail.com
@@ -86,21 +90,26 @@ const Refund = () => {
                     <p className="text-gray-900 leading-relaxed dark:text-gray-300">
                         If you have not received your refund yet:
                     </p>
-                    <ul className="list-disc list-inside text-gray-900 space-y-2 mt-2 dark:text-gray-300">
+                    <ul className="list-disc list-outside pl-5 space-y-3 text-gray-900 dark:text-gray-300 mt-2">
                         <li>Check your bank account again.</li>
                         <li>Contact your credit card company, as it may take some time to reflect.</li>
                         <li>If the issue persists, reach out to us for further assistance.</li>
                     </ul>
                 </div>
 
+                {/* Last Updated Section */}
+                <p className="text-gray-600 dark:text-gray-400 text-sm text-center mt-4">
+                    Last updated: February 12, 2025
+                </p>
+
                 {/* Contact Section */}
-                <div className="text-center mt-12">
+                <div className="text-center mt-12 p-6 border rounded-lg bg-gray-100 dark:bg-gray-800">
                     <h2 className="text-2xl font-semibold text-blue-500 dark:text-blue-400 mb-4">
                         Need Help?
                     </h2>
                     <p className="text-gray-900 dark:text-gray-300">
                         If you have any questions regarding our refund policy, feel free to{" "}
-                        <Link href="/contact" className="text-blue-500 hover:underline cursor-pointer dark:text-blue-400">
+                        <Link href="/contact" className="text-blue-500 hover:underline">
                             contact us
                         </Link>
                         .
