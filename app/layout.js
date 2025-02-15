@@ -50,10 +50,11 @@ export default function RootLayout({ children }) {
   httpEquiv="Content-Security-Policy"
   content="
     default-src 'self'; 
-    script-src 'self' 'unsafe-inline' 'unsafe-eval' 
+    script-src 'self' 'unsafe-inline' 'unsafe-eval'
       https://vercel.com 
       https://*.vercel.app 
       https://*.vercel-insights.com
+      https://vercel.live
       https://www.googletagmanager.com 
       https://www.google-analytics.com
       https://checkout.razorpay.com
@@ -70,6 +71,7 @@ export default function RootLayout({ children }) {
       https://vercel.com 
       https://*.vercel.app 
       https://*.vercel-insights.com
+      https://vercel.live
       https://www.google-analytics.com 
       https://api.clerk.dev 
       https://noted-frog-19.clerk.accounts.dev
