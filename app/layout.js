@@ -46,33 +46,39 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <meta
+        <meta
   httpEquiv="Content-Security-Policy"
   content="
     default-src 'self'; 
     script-src 'self' 'unsafe-inline' 'unsafe-eval' 
       https://vercel.com 
+      https://*.vercel.app 
       https://*.vercel-insights.com
-      https://*.vercel.app
       https://www.googletagmanager.com 
       https://www.google-analytics.com
       https://checkout.razorpay.com
       https://clerk.dev
       https://*.clerk.dev
-      https://noted-frog-19.clerk.accounts.dev;
+      https://noted-frog-19.clerk.accounts.dev
+      https://cloudflare.com
+      https://captcha.clerk.com
+      blob:;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     font-src 'self' https://fonts.gstatic.com;
-    img-src 'self' data: https://vercel.com https://*.clerk.dev;
+    img-src 'self' data: https://vercel.com https://*.clerk.dev https://img.clerk.com;
     connect-src 'self' 
       https://vercel.com 
+      https://*.vercel.app 
       https://*.vercel-insights.com
       https://www.google-analytics.com 
       https://api.clerk.dev 
       https://noted-frog-19.clerk.accounts.dev
       https://lumberjack.razorpay.com
       https://checkout.razorpay.com
-      https://api.razorpay.com;
-    frame-src 'self' https://checkout.razorpay.com https://api.razorpay.com;
+      https://api.razorpay.com
+      https://captcha.clerk.com
+      wss://*.clerk.dev;
+    frame-src 'self' https://checkout.razorpay.com https://api.razorpay.com https://*.clerk.dev;
     worker-src 'self' blob:;
     child-src 'self' blob:;
   "
