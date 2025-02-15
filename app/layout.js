@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-    <meta
+      <meta
   httpEquiv="Content-Security-Policy"
   content="
     default-src 'self'; 
@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
       https://noted-frog-19.clerk.accounts.dev;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     font-src 'self' https://fonts.gstatic.com;
-    img-src 'self' data: https://vercel.com;
+    img-src 'self' data: https://vercel.com https://*.clerk.dev;
     connect-src 'self' 
       https://vercel.com 
       https://*.vercel-insights.com
