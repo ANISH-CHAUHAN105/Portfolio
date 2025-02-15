@@ -39,7 +39,7 @@ const Contact = () => {
               href="https://portfolio-one-azure-47.vercel.app"
               className="text-blue-500 hover:underline"
             >
-              portfolio-2n53tbs15-anish-chauhan105s-projects.vercel.app/
+              https://portfolio-one-azure-47.vercel.app
             </a>
           </p>
         </div>
