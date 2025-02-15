@@ -46,12 +46,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-       <meta
+    <meta
   httpEquiv="Content-Security-Policy"
   content="
     default-src 'self'; 
     script-src 'self' 'unsafe-inline' 'unsafe-eval' 
       https://vercel.com 
+      https://*.vercel-insights.com
+      https://*.vercel.app
       https://www.googletagmanager.com 
       https://www.google-analytics.com
       https://checkout.razorpay.com
@@ -63,6 +65,7 @@ export default function RootLayout({ children }) {
     img-src 'self' data: https://vercel.com;
     connect-src 'self' 
       https://vercel.com 
+      https://*.vercel-insights.com
       https://www.google-analytics.com 
       https://api.clerk.dev 
       https://noted-frog-19.clerk.accounts.dev
@@ -74,7 +77,6 @@ export default function RootLayout({ children }) {
     child-src 'self' blob:;
   "
 />
-
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-[100vh] bg-gray-900 text-white transition-colors duration-300`}
