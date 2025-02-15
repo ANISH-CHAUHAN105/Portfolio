@@ -56,7 +56,7 @@ const Refund = () => {
                     <ul className="list-decimal list-inside text-gray-900 space-y-2 dark:text-gray-300">
                         <li>Contact us at{" "}
                             <span className="text-blue-500 hover:underline cursor-pointer dark:text-blue-400">
-                                support@example.com
+                                canish005@gmail.com
                             </span>{" "}
                             with your order details.
                         </li>
