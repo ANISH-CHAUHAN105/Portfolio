@@ -4,30 +4,30 @@ import Image from "next/image";
 
 const Footer = () => {
     return (
-        <footer className="p-4 md:p-8 bg-white dark:bg-gray-700 shadow-lg">
+        <footer className="p-4 md:p-8 bg-gray-100 dark:bg-[#121212] shadow-lg">
             <div className="flex flex-col lg:flex-row justify-between items-center">
                 {/* Left Section - Profile */}
                 <div className="flex items-center gap-4 mb-4 lg:mb-0">
                     <Image
-                        className="rounded-full border-2 border-gray-700 dark:border-gray-500 transition-transform duration-300 hover:scale-110"
+                        className="rounded-full border-2 border-gray-400 dark:border-gray-600 transition-transform duration-300 hover:scale-110"
                         src="/anish.jpg"
                         width={60}
                         height={60}
                         alt="profile pic"
                     />
-                    <p className="text-2xl font-bold text-gray-800 dark:text-gray-200">
+                    <p className="text-2xl font-bold text-gray-900 dark:text-gray-200">
                         Anish Chauhan
                     </p>
                 </div>
 
                 {/* Middle Section - Footer Links */}
                 <div className="mb-4 lg:mb-0">
-                    <ul className="flex flex-wrap justify-center gap-4 text-gray-800 dark:text-gray-300">
+                    <ul className="flex flex-wrap justify-center gap-6 text-gray-700 dark:text-gray-300">
                         {["Privacy", "Terms", "Shop", "Refund"].map((item) => (
                             <li key={item}>
                                 <Link
                                     href={`/${item.toLowerCase()}`}
-                                    className="hover:text-blue-400 dark:hover:text-blue-300 transition duration-300"
+                                    className="hover:text-blue-600 dark:hover:text-blue-400 transition duration-300"
                                 >
                                     {item}
                                 </Link>
@@ -62,7 +62,7 @@ const Footer = () => {
             </div>
 
             {/* Copyright Section */}
-            <div className="text-center mt-8 text-gray-600 dark:text-gray-500">
+            <div className="text-center mt-8 text-gray-700 dark:text-gray-400">
                 &copy; {new Date().getFullYear()} Anish Chauhan. All rights reserved.
             </div>
         </footer>
