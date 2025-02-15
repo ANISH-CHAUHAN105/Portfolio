@@ -62,12 +62,17 @@ export default function RootLayout({ children }) {
       https://*.clerk.dev
       https://noted-frog-19.clerk.accounts.dev
       https://cloudflare.com
+      https://*.cloudflare.com
       https://captcha.clerk.com
       https://challenges.cloudflare.com
       blob:;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     font-src 'self' https://fonts.gstatic.com;
-    img-src 'self' data: https://vercel.com https://*.clerk.dev https://img.clerk.com;
+    img-src 'self' data: 
+      https://vercel.com 
+      https://*.clerk.dev 
+      https://img.clerk.com 
+      https://*.cloudflare.com;
     connect-src 'self' 
       https://vercel.com 
       https://*.vercel.app 
@@ -75,18 +80,22 @@ export default function RootLayout({ children }) {
       https://vercel.live
       https://www.google-analytics.com 
       https://api.clerk.dev 
+      https://*.clerk.dev
       https://noted-frog-19.clerk.accounts.dev
       https://lumberjack.razorpay.com
       https://checkout.razorpay.com
       https://api.razorpay.com
       https://captcha.clerk.com
+      https://*.cloudflare.com
       https://challenges.cloudflare.com
       wss://*.clerk.dev;
     frame-src 'self' 
       https://checkout.razorpay.com 
       https://api.razorpay.com 
       https://*.clerk.dev 
-      https://challenges.cloudflare.com;
+      https://*.cloudflare.com
+      https://challenges.cloudflare.com
+      https://vercel.live;
     worker-src 'self' blob:;
     child-src 'self' blob:;
   "
