@@ -20,6 +20,9 @@ const About = () => {
                             width={300}
                             height={300}
                             className="rounded-full mx-auto md:mx-0 border-4 border-gray-300 dark:border-gray-700 shadow-lg transition-transform duration-300 hover:scale-110"
+                            priority 
+                            loading="eager"
+                            unoptimized={false}
                         />
                     </div>
 
