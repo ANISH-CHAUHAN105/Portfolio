@@ -54,15 +54,16 @@ export default function Home() {
         {/* Right Section - Image */}
         <div className="relative flex items-center justify-center p-8">
           <Image
-            src="/anish.jpg"
-            alt="Anish Chauhan"
-            width={300}
-            height={300}
-            priority 
-            loading="eager"
-            className="rounded-full shadow-2xl border-4 border-gray-700 ring-2 ring-blue-500 transition duration-300 hover:scale-105 hover:shadow-xl hover:ring-4 hover:ring-blue-400/80"
-            layout="intrinsic"
-          />
+  src="/anish.jpg"
+  alt="Anish Chauhan"
+  width={300}
+  height={300}
+  priority 
+  loading="eager"
+  className="rounded-full shadow-2xl border-4 border-gray-700 ring-2 ring-blue-500 transition duration-300 hover:scale-105 hover:shadow-xl hover:ring-4 hover:ring-blue-400/80"
+  sizes="(max-width: 768px) 150px, 300px"
+/>
+
         </div>
       </div>
 
