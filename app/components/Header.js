@@ -15,9 +15,9 @@ const Header = () => {
   const { isDarkMode, toggleDarkMode } = useTheme(); // Use global dark mode state
 
   return (
-    <header className="z-10 sticky top-0 p-6 md:px-12 bg-white dark:bg-gray-700 shadow-md flex flex-col lg:flex-row justify-between items-center">
+    <header className="z-10 sticky top-0 p-6 md:px-12 bg-gray-100 dark:bg-[#121212] shadow-md flex flex-col lg:flex-row justify-between items-center transition-all duration-300">
       {/* Logo */}
-      <div className="flex justify-center sm:justify-start mb-4">
+      <div className="flex justify-center sm:justify-start mb-4 lg:mb-0">
         <Image
           src="/developer.svg"
           width={200}
@@ -28,64 +28,43 @@ const Header = () => {
       </div>
 
       {/* Navigation Links */}
-      <ul className="flex justify-center items-center gap-4 sm:gap-6 md:gap-8 sm:flex-1">
-        <li>
-          <Link
-            href="/"
-            className="text-gray-900 dark:text-gray-200 font-semibold dark:hover:text-blue-500 hover:text-blue-500 transition duration-300 ease-in-out"
-          >
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/about"
-            className="text-gray-900 dark:text-gray-200 font-semibold dark:hover:text-blue-500 hover:text-blue-500 transition duration-300 ease-in-out"
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/contact"
-            className="text-gray-900 dark:text-gray-200 font-semibold dark:hover:text-blue-500 hover:text-blue-500 transition duration-300 ease-in-out"
-          >
-            Contact
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/socials"
-            className="text-gray-900 dark:text-gray-200 font-semibold dark:hover:text-blue-500 hover:text-blue-500 transition duration-300 ease-in-out"
-          >
-            Socials
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/payment"
-            className="text-gray-900 dark:text-gray-200 font-semibold dark:hover:text-blue-500 hover:text-blue-500 transition duration-300 ease-in-out"
-          >
-            Support
-          </Link>
-        </li>
-      </ul>
+      <nav>
+        <ul className="flex justify-center items-center gap-4 sm:gap-6 md:gap-8 sm:flex-1">
+          {[
+            { name: "Home", link: "/" },
+            { name: "About", link: "/about" },
+            { name: "Contact", link: "/contact" },
+            { name: "Socials", link: "/socials" },
+            { name: "Support", link: "/payment" },
+          ].map(({ name, link }) => (
+            <li key={name}>
+              <Link
+                href={link}
+                className="text-gray-900 dark:text-gray-200 font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition duration-300 ease-in-out"
+              >
+                {name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
 
-      {/* SignIn Buttons */}
-      <div className="flex justify-center sm:justify-end gap-4 sm:ml-6 mt-4">
+      {/* Right Section: Dark Mode & Authentication */}
+      <div className="flex justify-center sm:justify-end gap-4 sm:ml-6 mt-4 lg:mt-0">
         {/* Dark Mode Toggle Button */}
         <button
           onClick={toggleDarkMode}
-          className="text-white dark:text-gray-200 p-2 rounded-md bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500 transition duration-300"
+          className="p-2 rounded-md bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-400 dark:hover:bg-gray-600 transition duration-300"
           aria-label="Toggle dark mode"
         >
           {isDarkMode ? "☀️" : "🌙"}
         </button>
 
+        {/* Sign In / Sign Up Buttons */}
         <SignedOut>
           <div className="flex gap-2">
-            <SignInButton className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600" />
-            <SignUpButton className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600" />
+            <SignInButton className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300" />
+            <SignUpButton className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition duration-300" />
           </div>
         </SignedOut>
         <SignedIn>
