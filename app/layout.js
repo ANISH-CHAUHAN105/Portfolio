@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-       <meta
+      <meta
   httpEquiv="Content-Security-Policy"
   content="
     default-src 'self'; 
@@ -63,6 +63,7 @@ export default function RootLayout({ children }) {
       https://noted-frog-19.clerk.accounts.dev
       https://cloudflare.com
       https://captcha.clerk.com
+      https://challenges.cloudflare.com
       blob:;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     font-src 'self' https://fonts.gstatic.com;
@@ -79,14 +80,13 @@ export default function RootLayout({ children }) {
       https://checkout.razorpay.com
       https://api.razorpay.com
       https://captcha.clerk.com
-      wss://*.clerk.dev
-      wss://*;
+      https://challenges.cloudflare.com
+      wss://*.clerk.dev;
     frame-src 'self' 
       https://checkout.razorpay.com 
       https://api.razorpay.com 
-      https://*.clerk.dev
-      https://captcha.clerk.com
-      https://vercel.live;
+      https://*.clerk.dev 
+      https://challenges.cloudflare.com;
     worker-src 'self' blob:;
     child-src 'self' blob:;
   "
