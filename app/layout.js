@@ -58,6 +58,7 @@ export default function RootLayout({ children }) {
       https://www.googletagmanager.com 
       https://www.google-analytics.com
       https://checkout.razorpay.com
+      https://clerk.anishportfolios.me
       https://clerk.dev
       https://*.clerk.dev
       https://noted-frog-19.clerk.accounts.dev
