@@ -26,7 +26,7 @@ export const metadata = {
     siteName: "Anish Chauhan Portfolio",
     images: [
       {
-        url: "/anish.jpg", 
+        url: "/anish.jpg",
         width: 800,
         height: 600,
         alt: "Anish Chauhan Portfolio",
@@ -46,61 +46,66 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <meta
-  httpEquiv="Content-Security-Policy"
-  content="
-    default-src 'self'; 
-    script-src 'self' 'unsafe-inline' 'unsafe-eval'
-      https://vercel.com 
-      https://*.vercel.app 
-      https://*.vercel-insights.com
-      https://vercel.live
-      https://www.googletagmanager.com 
-      https://www.google-analytics.com
-      https://checkout.razorpay.com
-      https://clerk.anishportfolios.me
-      https://clerk.dev
-      https://*.clerk.dev
-      https://noted-frog-19.clerk.accounts.dev
-      https://cloudflare.com
-      https://*.cloudflare.com
-      https://captcha.clerk.com
-      https://challenges.cloudflare.com
-      blob:;
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-    font-src 'self' https://fonts.gstatic.com;
-    img-src 'self' data: 
-      https://vercel.com 
-      https://*.clerk.dev 
-      https://img.clerk.com 
-      https://*.cloudflare.com;
-    connect-src 'self' 
-      https://vercel.com 
-      https://*.vercel.app 
-      https://*.vercel-insights.com
-      https://vercel.live
-      https://www.google-analytics.com 
-      https://api.clerk.dev 
-      https://*.clerk.dev
-      https://noted-frog-19.clerk.accounts.dev
-      https://lumberjack.razorpay.com
-      https://checkout.razorpay.com
-      https://api.razorpay.com
-      https://captcha.clerk.com
-      https://*.cloudflare.com
-      https://challenges.cloudflare.com
-      wss://*.clerk.dev;
-    frame-src 'self' 
-      https://checkout.razorpay.com 
-      https://api.razorpay.com 
-      https://*.clerk.dev 
-      https://*.cloudflare.com
-      https://challenges.cloudflare.com
-      https://vercel.live;
-    worker-src 'self' blob:;
-    child-src 'self' blob:;
-  "
-/>
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="
+            default-src 'self'; 
+            script-src 'self' 'unsafe-inline' 'unsafe-eval'
+              https://vercel.com 
+              https://*.vercel.app 
+              https://*.vercel-insights.com
+              https://vercel.live
+              https://www.googletagmanager.com 
+              https://www.google-analytics.com
+              https://checkout.razorpay.com
+              https://clerk.anishportfolios.me 
+              https://clerk.dev
+              https://*.clerk.dev
+              https://noted-frog-19.clerk.accounts.dev
+              https://cloudflare.com
+              https://*.cloudflare.com
+              https://captcha.clerk.com
+              https://challenges.cloudflare.com
+              blob:;
+
+            style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+            font-src 'self' data: https://fonts.gstatic.com;
+            img-src 'self' data: 
+              https://vercel.com 
+              https://*.clerk.dev 
+              https://img.clerk.com 
+              https://*.cloudflare.com;
+
+            connect-src 'self' 
+              https://vercel.com 
+              https://*.vercel.app 
+              https://*.vercel-insights.com
+              https://vercel.live
+              https://www.google-analytics.com 
+              https://api.clerk.dev 
+              https://*.clerk.dev
+              https://noted-frog-19.clerk.accounts.dev
+              https://clerk.anishportfolios.me
+              https://lumberjack.razorpay.com
+              https://checkout.razorpay.com
+              https://api.razorpay.com
+              https://captcha.clerk.com
+              https://*.cloudflare.com
+              https://challenges.cloudflare.com
+              wss://*.clerk.dev;
+
+            frame-src 'self' 
+              https://checkout.razorpay.com 
+              https://api.razorpay.com 
+              https://*.clerk.dev 
+              https://*.cloudflare.com
+              https://challenges.cloudflare.com
+              https://vercel.live;
+
+            worker-src 'self' blob:;
+            child-src 'self' blob:;
+          "
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-[100vh] bg-gray-900 text-white transition-colors duration-300`}
