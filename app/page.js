@@ -97,7 +97,7 @@ export default function Home() {
                 custom seekbar.
               </p>
               <a
-                href="https://anish-chauhan105.github.io/Spotify-Clone/"
+                href="https://github.com/anish-chauhan105/Spotify-Clone"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-block text-blue-400 hover:text-blue-500"
