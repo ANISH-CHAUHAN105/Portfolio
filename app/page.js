@@ -97,7 +97,7 @@ export default function Home() {
                 custom seekbar.
               </p>
               <a
-                href="https://github.com/anish-chauhan105/Spotify-Clone"
+                href="https://anish-chauhan105.github.io/Spotify-Clone/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-block text-blue-400 hover:text-blue-500"
@@ -122,12 +122,12 @@ export default function Home() {
                 Portfolio Website
               </h3>
               <p className="text-gray-700 dark:text-gray-300 text-sm mt-2">
-                This portfolio website showcases my skills and projects using
+                This Veicle Rental website showcases my skills and projects using
                 Next.js, React, and Tailwind CSS. It features a dynamic layout
                 with smooth transitions, a dark mode toggle.
               </p>
               <a
-                href="/"
+                href="https://vehiclerentalsystem-theta.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-block text-blue-400 hover:text-blue-500"
