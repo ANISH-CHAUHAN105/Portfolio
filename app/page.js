@@ -119,7 +119,7 @@ export default function Home() {
                 layout="responsive"
               />
               <h3 className="text-2xl font-semibold mt-4 text-gray-900 dark:text-white">
-                Portfolio Website
+                Vehicle Rental Managment System
               </h3>
               <p className="text-gray-700 dark:text-gray-300 text-sm mt-2">
                 This Veicle Rental website showcases my skills and projects using
