@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="flex items-center gap-4">
                     <Image
                         className="rounded-full border-2 border-gray-400 dark:border-gray-600 transition-transform duration-300 hover:scale-105"
-                        src="/anish.jpg"
+                        src="/anish.jpeg"
                         width={60}
                         height={60}
                         alt="Anish Chauhan"
@@ -40,7 +40,7 @@ const Footer = () => {
                 <div>
                     <ul className="flex justify-center gap-5">
                         {[
-                            { name: "instagram", url: "https://www.instagram.com/anishchauhan615/" },
+                            { name: "codeforces", url: "https://codeforces.com/profile/canish005/" },
                             { name: "leetcode", url: "https://leetcode.com/u/fChzE8rS9c/" },
                             { name: "linkedin", url: "https://www.linkedin.com/in/anish-chauhan-438735296/" },
                             { name: "github", url: "https://github.com/ANISH-CHAUHAN105" },
