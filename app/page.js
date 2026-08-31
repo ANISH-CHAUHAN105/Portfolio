@@ -36,7 +36,7 @@ export default function Home() {
           </p>
           <div className="flex justify-center lg:justify-start space-x-4 mt-4">
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1uC0e_v4JvFvMG6AelfjcqZCLIEfgmSf7/view?usp=drivesdk"
               download="resume.pdf"
               className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg transition-all duration-300 ease-in-out hover:bg-blue-600 hover:scale-105 shadow-lg hover:shadow-blue-500/50"
             >
@@ -54,7 +54,7 @@ export default function Home() {
         {/* Right Section - Image */}
         <div className="relative flex items-center justify-center p-8">
           <Image
-  src="/anish.jpg"
+  src="/anish.jpeg"
   alt="Anish Chauhan"
   width={300}
   height={300}
@@ -77,10 +77,43 @@ export default function Home() {
         </h2>
         <div className="flex flex-wrap justify-center gap-6">
           {/* Project 1 */}
+<div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+  <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-2xl">
+    <Image
+      src="/project1.png"
+      alt="Content-Based Movie Recommendation System"
+      width={500}
+      height={300}
+      className="rounded-md"
+      layout="responsive"
+    />
+
+    <h3 className="text-2xl font-semibold mt-4 text-gray-900 dark:text-white">
+      Content-Based Movie Recommendation System
+    </h3>
+
+    <p className="text-gray-700 dark:text-gray-300 text-sm mt-2">
+      A lightweight movie recommendation system built with Python,
+      Streamlit, and machine learning. It uses TF-IDF vectorization and
+      cosine similarity to analyze movie metadata and recommend movies
+      similar to a selected title.
+    </p>
+
+    <a
+      href="https://github.com/ANISH-CHAUHAN105/movie-recommendation-system"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mt-4 inline-block text-blue-400 hover:text-blue-500"
+    >
+      View Project
+    </a>
+  </div>
+</div>
+          {/* Project 2 */}
           <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
             <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-2xl">
               <Image
-                src="/project1.png"
+                src="/project2.png"
                 alt="Project 1"
                 width={500}
                 height={300}
@@ -107,11 +140,11 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Project 2 */}
+          {/* Project 3 */}
           <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
             <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-2xl">
               <Image
-                src="/project2.png"
+                src="/project3.png"
                 alt="Project 2"
                 width={500}
                 height={300}
